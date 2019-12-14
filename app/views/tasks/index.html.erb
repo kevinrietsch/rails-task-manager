@@ -1,0 +1,7 @@
+<h1 style = "font-family: helvetica, serif; font-size:32px">My Tasks</h1>
+<% @tasks.each do |task| %>
+  <div class="form-check">
+    <input class="form-check" type="checkbox" value="" id="Check">
+    <label style = "font-family: helvetica, serif; font-size:16px" class="form-check-label" for="check"><%= link_to task.title, task.title %></label>
+  </div>
+<% end %>
